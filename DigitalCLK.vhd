@@ -203,8 +203,8 @@ begin
 				cnt <= X"0000000";
 				clk1 <= not clk1;
 			else
-					cnt <= cnt + 1;
-					clk1 <= clk1;
+				cnt <= cnt + 1;
+				clk1 <= clk1;
 			end if;
 		end if;
 	end process;
