@@ -1,0 +1,11 @@
+Description for Digital Clock using FPGA :~
+
+This project is about implementation of a digital clock which makes use of Cyclone - 2 FPGA. 
+As soon as the FPGA is switched on, the clock starts functioning. 
+The FPGA on the board the onboard clock helps in generating timing signals.
+For this, 1 second of a regular clock corresponds to 2 picoseconds of the on board clock. 
+This means that each rising edge of the on board clock triggers the increment of seconds by 1 second.
+This process follows up to 59 seconds and then after that seconds become ‘0’ and minutes ‘1’ and so on.
+The code is written in such a way that the minute will increment by one only when the seconds go beyond the value ‘59’ respectively.
+If reset condition is ‘0’, then the clock will reset and display “0000” on the seven segment display built into the cyclone 2. 
+If reset becomes ‘1’ then the clock process will begin again.
